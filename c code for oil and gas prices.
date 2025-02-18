@@ -1,0 +1,279 @@
+#include<stdio.h>
+
+
+int main()
+{
+   float drilling_cost,mined_oil,refinery_cost,remainder_oil,remainder_gas;
+   int choice;
+   printf("[if you wish to know the cost of oil input 1.]\n[Else if you want to know the price of gas click 2.]\n ");
+   scanf("%d",&choice);
+
+   if(choice==1)
+ {
+
+    printf("input the cost incurred in drilling the oil in million dollars:");
+    scanf("%f",&drilling_cost);
+
+    printf("Input the mined oil in gallons in Barrel Tonnes:");
+    scanf("%f",&mined_oil);
+
+    printf("Input the cost incurred in refining the mined oil in Billions in dollars:");
+    scanf("%f",&refinery_cost);
+
+    printf("Input the remaining oil in the storage facilities in Barrel Tonnes:");
+    scanf("%f",&remainder_oil);
+
+        if(drilling_cost>27)
+        {
+          if(mined_oil>44.6)
+          {
+            if(refinery_cost>30)
+            {
+               if(remainder_oil>12.5)
+               {
+                  printf("The cost of oil per Gallon in the market is: 2.05 dollars ");
+               }
+               else
+               {
+                    printf("The cost of oil per Gallon in the market is: 2.20  dollars ");
+               }
+            }
+            else
+            {
+                if(remainder_oil>12.5)
+               {
+                    printf("The cost of oil per Gallon in the market is: 1.96  dollars ");
+               }
+               else
+               {
+                      printf("The cost of oil per Gallon in the market is: 2.00 dollars   ");
+               }
+            }
+          }
+                  else
+          {
+               if(refinery_cost>30)
+            {
+                 if(remainder_oil>12.5)
+               {
+                      printf("The cost of oil per Gallon in the market is: 2.10  dollars ");
+               }
+               else
+               {
+                      printf("The cost of oil per Gallon in the market is: 2.50 dollars  ");
+               }
+            }
+            else
+            {
+               if(remainder_oil>12.5)
+               {
+                      printf("The cost of oil per Gallon in the market is: 2.10 dollars  ");
+               }
+               else
+               {
+                      printf("The cost of oil per Gallon in the market is:  2.30 dollars ");
+               }
+            }
+          }
+        }
+
+
+
+
+        else
+        {
+           if(mined_oil>44.6)
+          {
+              if(refinery_cost>30)
+            {
+                if(remainder_oil>12.5)
+               {
+                     printf("The cost of oil per Gallon in the market is: 1.39  dollars  ");
+               }
+               else
+               {
+                      printf("The cost of oil per Gallon in the market is: 1.46 dollars  ");
+               }
+            }
+            else
+            {
+                if(remainder_oil>12.5)
+               {
+                     printf("The cost of oil per Gallon in the market is: 1.30  dollars ");
+               }
+               else
+               {
+                      printf("The cost of oil per Gallon in the market is: 1.41 dollars  ");
+               }
+            }
+          }
+          else
+          {
+                if(refinery_cost>30)
+            {
+                 if(remainder_oil>12.5)
+               {
+                     printf("The cost of oil per Gallon in the market is:  1.45 dollars ");
+               }
+               else
+               {
+                      printf("The cost of oil per Gallon in the market is: 1.47 dollars  ");
+               }
+            }
+            else
+            {
+               if(remainder_oil>12.5)
+               {
+                     printf("The cost of oil per Gallon in the market is: 1.41  dollars ");
+               }
+               else
+               {
+                     printf("The cost of oil per Gallon in the market is: 1.49  dollars ");
+               }
+            }
+          }
+        }
+
+
+
+ }
+
+
+
+
+
+else if(choice==2)
+{
+
+
+    printf("input the cost incurred in drilling the oil in million dollars:");
+    scanf("%f",&drilling_cost);
+
+    printf("Input the mined oil in gallons in Barrel Tonnes:");
+    scanf("%f",&mined_oil);
+
+    printf("Input the cost incurred in refining the mined oil in Billions in dollars:");
+    scanf("%f",&refinery_cost);
+
+    printf("Input the remaining gas in the storage facilities in Billions of cubic feet:");
+    scanf("%f",&remainder_gas);
+
+
+    if(drilling_cost>27)
+        {
+          if(mined_oil>44.6)
+          {
+            if(refinery_cost>30)
+            {
+               if(remainder_gas>0.95)
+               {
+                  printf("The price of gas in the market in Dollars per cubic feet:  2.80 ");
+               }
+               else
+               {
+                   printf("The price of gas in the market in Dollars per cubic feet:  2.85 ");
+               }
+            }
+            else
+            {
+                if(remainder_gas>0.95)
+               {
+                    printf("The price of gas in the market in Dollars per cubic feet:  2.60 ");
+               }
+               else
+               {
+                    printf("The price of gas in the market in Dollars per cubic feet: 2.66  ");
+               }
+            }
+          }
+                  else
+          {
+               if(refinery_cost>30)
+            {
+                 if(remainder_gas>0.95)
+               {
+                    printf("The price of gas in the market in Dollars per cubic feet: 2.88  ");
+               }
+               else
+               {
+                    printf("The price of gas in the market in Dollars per cubic feet: 2.90  ");
+               }
+            }
+            else
+            {
+               if(remainder_gas>0.95)
+               {
+                   printf("The price of gas in the market in Dollars per cubic feet:  2.85 ");
+               }
+               else
+               {
+                    printf("The price of gas in the market in Dollars per cubic feet:  2.87 ");
+               }
+            }
+          }
+        }
+
+
+
+
+        else
+        {
+           if(mined_oil>44.6)
+          {
+              if(refinery_cost>30)
+            {
+                if(remainder_gas>0.95)
+               { printf("The price of gas in the market in Dollars per cubic feet: 2.66  ");
+
+               }
+               else
+               {
+                   printf("The price of gas in the market in Dollars per cubic feet: 2.69  ");
+               }
+            }
+            else
+            {
+                if(remainder_gas>0.95)
+               {
+                  printf("The price of gas in the market in Dollars per cubic feet:  2.60 ");
+               }
+               else
+               {
+                   printf("The price of gas in the market in Dollars per cubic feet:  2.65 ");
+               }
+            }
+          }
+          else
+          {
+                if(refinery_cost>30)
+            {
+                 if(remainder_gas>0.95)
+               {
+                   printf("The price of gas in the market in Dollars per cubic feet: 2.70  ");
+               }
+               else
+               {
+                    printf("The price of gas in the market in Dollars per cubic feet: 2.72  ");
+               }
+            }
+            else
+            {
+               if(remainder_gas>0.95)
+               {
+                     printf("The price of gas in the market in Dollars per cubic feet:  2.70 ");
+               }
+               else
+               {
+                    printf("The price of gas in the market in Dollars per cubic feet:  2.71 ");
+               }
+            }
+          }
+        }
+}
+
+else
+{
+    printf("you keyed an invalid choice!");
+}
+return 0;
+}
